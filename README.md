@@ -40,20 +40,27 @@ Follow these steps to set up and run the project locally:
 ### ✅ 1. Clone the Repository
 
 git clone https://github.com/your-username/phonepe-project.git
+
 cd phonepe-project
+
 ✅ 2. Set Up Virtual Environment (Optional)
 
 python -m venv env
+
 source env/bin/activate  # On Windows use: env\Scripts\activate
+
 ✅ 3. Install Dependencies
 
 pip install -r requirements.txt
+
 ✅ 4. Setup MySQL Database
+
 Ensure MySQL is installed and running.
 
 Create a database:
 
 CREATE DATABASE phonepe_db;
+
 Use the provided data ingestion script or your own logic to insert data into the following tables:
 
 **Table Name and Purpose**
