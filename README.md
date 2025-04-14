@@ -30,9 +30,6 @@ The dashboard provides:
 
 📦 phonepe-project/ ├── 📂 data/ # JSON data extracted from PhonePe Pulse GitHub ├── 📜 phonepay.py # Main Streamlit dashboard code ├── 📜 data_ingestion_scripts.py # Script to parse and insert JSON into MySQL ├── 📜 requirements.txt # Python dependencies └── 📄 README.md # You're here!
 
-yaml
-Copy
-Edit
 
 ---
 
@@ -42,7 +39,6 @@ Follow these steps to set up and run the project locally:
 
 ### ✅ 1. Clone the Repository
 
-```bash
 git clone https://github.com/your-username/phonepe-project.git
 cd phonepe-project
 ✅ 2. Set Up Virtual Environment (Optional)
@@ -57,11 +53,10 @@ Ensure MySQL is installed and running.
 
 Create a database:
 
-
 CREATE DATABASE phonepe_db;
 Use the provided data ingestion script or your own logic to insert data into the following tables:
 
-Table Name	Purpose
+**Table Name and Purpose**
 
 aggregate_transaction
 Aggregated transaction data by state, year, quarter, and transaction type.
@@ -92,7 +87,7 @@ Insurance transaction data for the top pincodes.
 
 Sample data from PhonePe Pulse is in JSON format and must be parsed correctly into SQL.
 
-💡 How to Run the Dashboard
+**💡 How to Run the Dashboard**
 Once your MySQL database is ready and data is inserted:
 
 streamlit run phonepay.py
@@ -101,7 +96,7 @@ You will see a local URL like:
 http://localhost:8501
 Open this in your browser.
 
-🧩 Features in the Dashboard
+**🧩 Features in the Dashboard**
 ✅ Home Tab
 Overview of PhonePe
 
@@ -111,41 +106,30 @@ Download link
 
 ✅ Explore Data Tab
 Animated Geo Maps (choropleths) for:
-
 Total Transaction Amounts
-
 Transaction Counts
-
 Year-wise visualizations:
-
 Payment types vs Count & Amount
-
 Transaction distribution by state
-
 State-wise filtering:
-
 District-level registered users
-
 District-level transaction analysis
 
 ✅ Top Charts Tab
 Top states by app opens
-
 Transaction types across years
-
 User growth trends
-
 Districts with highest registration
 
 📸 Sample Screenshots
 Add screenshots or GIFs of your dashboard UI here!
 
-![Screenshot (178)](https://github.com/user-attachments/assets/7e57da06-32f4-439f-aa01-22ee09d47309)
-![Screenshot (179)](https://github.com/user-attachments/assets/b3014e15-a231-4099-b077-bafe7edd48fd)
-![Screenshot (180)](https://github.com/user-attachments/assets/ef6e0868-ad12-4d4c-98e2-9f31c7d76093)
-![Screenshot (181)](https://github.com/user-attachments/assets/2b73dcbf-1bae-4845-b436-18b543c62ac6)
-![Screenshot (182)](https://github.com/user-attachments/assets/8882741f-3900-4277-8190-ca43ee44f874)
-![Screenshot (183)](https://github.com/user-attachments/assets/bb087798-f76d-45bb-af26-70022946071e)
+[Screenshot (178)](https://github.com/user-attachments/assets/7e57da06-32f4-439f-aa01-22ee09d47309)
+[Screenshot (179)](https://github.com/user-attachments/assets/b3014e15-a231-4099-b077-bafe7edd48fd)
+[Screenshot (180)](https://github.com/user-attachments/assets/ef6e0868-ad12-4d4c-98e2-9f31c7d76093)
+[Screenshot (181)](https://github.com/user-attachments/assets/2b73dcbf-1bae-4845-b436-18b543c62ac6)
+[Screenshot (182)](https://github.com/user-attachments/assets/8882741f-3900-4277-8190-ca43ee44f874)
+[Screenshot (183)](https://github.com/user-attachments/assets/bb087798-f76d-45bb-af26-70022946071e)
 
 
 🔐 Credentials and Notes
@@ -172,7 +156,7 @@ pip install -r requirements.txt
 Feel free to fork this repo, enhance the visuals, fix bugs, or add new features! PRs are welcome.
 
 📬 Contact
-Created by [Kavya]
+Created by Kavya
 
 
 
