@@ -98,7 +98,9 @@ http://localhost:8501
 Open this in your browser.
 
 **🧩 Features in the Dashboard**
+
 ✅ Home Tab
+
 Overview of PhonePe
 
 Features of the app
