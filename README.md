@@ -58,31 +58,31 @@ Use the provided data ingestion script or your own logic to insert data into the
 
 **Table Name and Purpose**
 
-aggregate_transaction
+aggregate_transaction:
 Aggregated transaction data by state, year, quarter, and transaction type.
 
-aggregate_user
+aggregate_user:
 Aggregated user data by state, year, quarter, and phone brand.
 
-map_transaction
+map_transaction:
 Transaction data aggregated at the district level.
 
-map_user
+map_user:
 User activity data (app opens and registrations) aggregated at the district level.
 
-top_transaction
+top_transaction:
 Transaction data for the top pincodes in each state, year and quarter.
 
-top_user
+top_user:
 User registration data for the top pincodes in each state, year and quarter.
 
-aggregated_insurance
+aggregated_insurance:
 Aggregated insurance transaction data by state, year, quarter, and insurance type.
 
-map_insurance
+map_insurance:
 Insurance transaction data aggregated at the district level.
 
-top_insurance
+top_insurance:
 Insurance transaction data for the top pincodes.
 
 Sample data from PhonePe Pulse is in JSON format and must be parsed correctly into SQL.
@@ -91,6 +91,7 @@ Sample data from PhonePe Pulse is in JSON format and must be parsed correctly in
 Once your MySQL database is ready and data is inserted:
 
 streamlit run phonepay.py
+
 You will see a local URL like:
 
 http://localhost:8501
@@ -106,22 +107,35 @@ Download link
 
 ✅ Explore Data Tab
 Animated Geo Maps (choropleths) for:
+
 Total Transaction Amounts
+
 Transaction Counts
+
 Year-wise visualizations:
+
 Payment types vs Count & Amount
+
 Transaction distribution by state
+
 State-wise filtering:
+
 District-level registered users
+
 District-level transaction analysis
 
 ✅ Top Charts Tab
+
 Top states by app opens
+
 Transaction types across years
+
 User growth trends
+
 Districts with highest registration
 
 📸 Sample Screenshots
+
 Add screenshots or GIFs of your dashboard UI here!
 
 [Screenshot (178)](https://github.com/user-attachments/assets/7e57da06-32f4-439f-aa01-22ee09d47309)
@@ -133,6 +147,7 @@ Add screenshots or GIFs of your dashboard UI here!
 
 
 🔐 Credentials and Notes
+
 Update your MySQL DB config inside phonepay.py:
 
 host = "localhost"
@@ -143,13 +158,18 @@ database = "phonepe_db"
 📌 Requirements
 
 streamlit
-mysql-connector-python
-pandas
-plotly
-Pillow
-requests
-Install using:
 
+mysql-connector-python
+
+pandas
+
+plotly
+
+Pillow
+
+requests
+
+Install using:
 pip install -r requirements.txt
 
 🤝 Contributing
