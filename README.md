@@ -78,10 +78,4 @@ streamlit run phonepe.py
 
 ---
 
-## 📌 Author
 
-Made with 💜 by **Kavya P P**  
-Batch: `DS-C-WD-E-B39`  
-For educational and portfolio use only.
-
----
